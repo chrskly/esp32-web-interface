@@ -7,7 +7,7 @@ _All other features are available however, and should work as you're used to.
 ## Configuration
 There are a few simple configurable options -if so needed- for you use case.
 
-##### Inverter
+#### Inverter
 You can change the default port for communication with the inverter:
 ```C++
 #define INVERTER_SERIAL_PORT [ Interface ]
@@ -20,7 +20,7 @@ Here you can change baud rates and page sizes.
 _Note: Unless you're using your own implementation of the OpenInverter firmware, don't change these!
 _Note 2: The buffer for the print interface is set at 2048 bytes. It's way over the top, I know.
 
-##### WiFi
+#### WiFi
 You can change the defualt softAP SSID and password by modifying the definitions like so:
 ```C++
 char *ssid_AP =      (char*)"--DEFUALT SSID--";
@@ -34,7 +34,7 @@ char *ssid_STA =      (char*)"--PRESET SSID HERE--";
 char *password_STA =  (char*)"--PRESET PASSWORD HERE--";
 ```
 
-##### Web Server
+#### Web Server
 The webserver port can be changed with:
 ```C++
 #define SERVER_PORT [PORT NUMBER]
