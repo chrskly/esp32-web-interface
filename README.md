@@ -1,8 +1,8 @@
 # ESP32 Web Interface Port
 This fork is a port of the [OpenInverter](https://openinverter.org) esp8266-web-interface for the ESP32.
 
-At this time SWD upload functionality is not available.
-_All other features are available however, and should work as you're used to.
+At this time SWD upload functionality is not available.  
+All other features are available however, and should work as you're used to.
 
 ## Configuration
 There are a few simple configurable options -if so needed- for you use case.
@@ -16,9 +16,9 @@ Where Interface can be any object derived from Print interface (like Serial, Ser
 
 > inverter.cpp
 
-Here you can change baud rates and page sizes. 
-_Note: Unless you're using your own implementation of the OpenInverter firmware, don't change these!
-_Note 2: The buffer for the print interface is set at 2048 bytes. It's way over the top, I know.
+Here you can change baud rates and page sizes.  
+Note: Unless you're using your own implementation of the OpenInverter firmware, don't change these!  
+Note 2: The buffer for the print interface is set at 2048 bytes. It's way over the top, I know.
 
 #### WiFi
 You can change the defualt softAP SSID and password by modifying the definitions like so:
@@ -55,5 +55,5 @@ If you want to be able to communicate with multiple inverters across multiple po
 ```C++
 Inverter inverter( PrintInterface );
 ```
-Note that the website doesn't support this use case and therefore the webserver doesn't either, but the option is there if you want to build a more custom solution for your inverter interface needs.
-_One possible way to do this is to create a new RequestHandler derived class that will handle all requests sent with a chosen prefex.
+Note that the website doesn't support this use case and therefore the webserver doesn't either, but the option is there if you want to build a more custom solution for your inverter interface needs.  
+One possible way to do this is to create a new RequestHandler derived class that will handle all requests sent with a chosen prefex.
