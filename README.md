@@ -5,7 +5,7 @@ At this time SWD upload functionality is not available.
 All other features are available however, and should work as you're used to.
 
 ## Configuration
-There are a few simple configurable options -if so needed- for you use case.
+There are a few simple configurable options - if so needed - for your use case.
 
 #### Inverter
 You can change the default port for communication with the inverter:
@@ -21,7 +21,7 @@ Note: Unless you're using your own implementation of the OpenInverter firmware, 
 Note 2: The buffer for the print interface is set at 2048 bytes. It's way over the top, I know.
 
 #### WiFi
-You can change the defualt softAP SSID and password by modifying the definitions like so:
+You can change the default softAP SSID and password by modifying the definitions like so:
 ```C++
 char *ssid_AP =      (char*)"--DEFUALT SSID--";
 char *password_AP =  (char*)"--DEFUALT PASSWORD--";
@@ -35,12 +35,12 @@ char *password_STA =  (char*)"--PRESET PASSWORD HERE--";
 ```
 
 #### Web Server
-The webserver port can be changed with:
+The web server port can be changed with:
 ```C++
 #define SERVER_PORT [PORT NUMBER]
 ```
 
-The index file can be defined with:
+The server index file can be defined with:
 ```C++
 #define SERVER_INDEX F(["--PATH TO INDEX FILE--"])
 ```
