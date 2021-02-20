@@ -8,13 +8,14 @@ _All other features are available however, and should work as you're used to.
 There are a few simple configurable options -if so needed- for you use case.
 
 ##### Inverter
-Here you can change the default port for communication with the inverter:
+You can change the default port for communication with the inverter:
 ```C++
 #define INVERTER_SERIAL_PORT [ Interface ]
 ```
 Where Interface can be any object derived from Print interface (like Serial, Serial2, SoftwareSerial).
 
 > inverter.cpp
+
 Here you can change baud rates and page sizes. 
 _Note: Unless you're using your own implementation of the OpenInverter firmware, don't change these!
 _Note 2: The buffer for the print interface is set at 2048 bytes. It's way over the top, I know.
