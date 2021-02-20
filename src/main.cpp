@@ -259,10 +259,6 @@ void handleFileList(){
         Serial.println("- failed to open directory");
         return;
     }
-    if(!root.isDirectory()){
-        Serial.println(" - not a directory");
-        return;
-    }
 
     File file = root.openNextFile();
     while(file){
