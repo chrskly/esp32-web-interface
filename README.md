@@ -12,7 +12,7 @@ You can change the default port for communication with the inverter:
 ```C++
 #define INVERTER_SERIAL_PORT [ Interface ]
 ```
-~~Interface can be any object derived from Print (like Serial, Serial2, SoftwareSerial).~~
+~~Interface can be any object derived from Print (like Serial, Serial2, SoftwareSerial).~~  
 Interface must be derived from HardwareSerial (like Serial, Serial1, Serial2).  
 
 > inverter.cpp
