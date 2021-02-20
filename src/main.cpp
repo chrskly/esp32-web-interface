@@ -78,6 +78,7 @@ void task_system_health(void *);
 void init_web_server();
 void init_wifi_ap();
 bool init_wifi_sta();
+void index_FS_files();
 void init_SPIFFS();
 static void __handleCommand();
 static void __handleUpdate();
