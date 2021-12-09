@@ -1,5 +1,5 @@
 # ESP32 Web Interface Port
-This fork is a port of the [OpenInverter](https://openinverter.org) esp8266-web-interface for the ESP32.
+This is a fork of [Bedz01](https://github.com/Bedz01) [code](https://github.com/Bedz01/esp32-web-interface-port) which is, in turn, a port of the [OpenInverter](https://openinverter.org) esp8266-web-interface for the ESP32. This fork makes a few small changes to enable support for esp32 boards which have ethernet ports.
 
 At this time SWD upload functionality is not available.  
 All other features are available however, and should work as you're used to.

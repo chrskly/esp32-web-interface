@@ -40,6 +40,7 @@
 #include <Arduino.h>
 #include "FS.h"
 #include "SPIFFS.h"
+#include <ETH.h>
 #include <WiFi.h>
 #include <WebServer.h>
 #include <inverter.h>
@@ -49,8 +50,8 @@
 #define LED_PIN 2
 #define SERVER_PORT 80
 #define SERVER_INDEX F("/index.html")
-#define MAX_NUMBER_OF_FILES 48
-#define INVERTER_SERIAL_PORT Serial2
+#define MAX_NUMBER_OF_FILES 64
+#define INVERTER_SERIAL_PORT Serial1
 #define MAX_WIFI_CONECTION_ATTEMPTS 10
 #define FORMAT_SPIFFS_IF_FAILED true
 
@@ -478,6 +479,8 @@ void task_system_health(void *){
 void setup(){
 	(DBG_OUTPUT_PORT).begin(DBG_OUTPUT_BAUD);
 	pinMode(LED_PIN, OUTPUT);
+
+	ETH.begin();
 
 	init_SPIFFS();
 
